@@ -1,0 +1,778 @@
+{
+	"info": {
+		"_postman_id": "5969d7dd-7f2c-485f-94d4-f6bde0de91a8",
+		"name": "VelocityAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10218581"
+	},
+	"item": [
+		{
+			"name": "Birds",
+			"item": [
+				{
+					"name": "GET#api/v1/birds/",
+					"item": [
+						{
+							"name": "GET#api/v1.0/birds",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/birds/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST#api/v1/birds",
+					"item": [
+						{
+							"name": "POST#api/v1.0/birds",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Cocostarc\",\n        \"color\": \"Alb\",\n        \"weight\": 122.0,\n        \"height\": 29.0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST#api/v1.0/birds",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Ibis\",\n        \"color\": \"Albastru\",\n        \"weight\": 101.0,\n        \"height\": 15.0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT#api/v1/birds/{id}",
+					"item": [
+						{
+							"name": "PUT#api/v1.0/birds/1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Cocostarc\",\n        \"color\": \"Alb\",\n        \"weight\": 122.0,\n        \"height\": 29.0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT#api/v1.0/birds/2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Lebada\",\n        \"color\": \"Negru\",\n        \"weight\": 567.0,\n        \"height\": 19.0\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/2",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE#api/v1/birds/{id}",
+					"item": [
+						{
+							"name": "DELETE#api/v1.0/birds/1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE#api/v1.0/birds/2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/2",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET#api/v1/birds/search?queryParams",
+					"item": [
+						{
+							"name": "GET#api/v1.0/birds/search?name&color",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/search?name=Vrabie&color=Maro",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"search"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Vrabie"
+										},
+										{
+											"key": "color",
+											"value": "Maro"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/birds/search?name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/search?name=Vrabie",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"search"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Vrabie"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/birds/search?color",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/birds/search?color=Maro",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"birds",
+										"search"
+									],
+									"query": [
+										{
+											"key": "color",
+											"value": "Maro"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sightings",
+			"item": [
+				{
+					"name": "GET#api/v1.0/sightings",
+					"item": [
+						{
+							"name": "GET#api/v1.0/sightings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST#api/v1.0/sightings",
+					"item": [
+						{
+							"name": "POST#api/v1.0/sightings",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"birdId\": 3,\n        \"location\": \"Muntii Macin\",\n        \"dateTime\": \"2022-07-15 01:30:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST#api/v1.0/sightings",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"birdId\": 3,\n        \"location\": \"Marea Neagra\",\n        \"dateTime\": \"2022-01-15 09:32:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT#api/v1.0/sightings/{id}",
+					"item": [
+						{
+							"name": "PUT#api/v1.0/sightings/1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"birdId\": 2,\n        \"location\": \"Padurea Atmagea\",\n        \"dateTime\": \"2001-07-15 01:30:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT#api/v1.0/sightings/2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"birdId\": 1,\n        \"location\": \"Muntii Apuseni\",\n        \"dateTime\": \"2012-01-15 09:32:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/2",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE#api/v1.0/sightings/{id}",
+					"item": [
+						{
+							"name": "DELETE#api/v1.0/sightings/1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE#api/v1.0/sightings/2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/2",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET#api/v1.0/sightings/search?queryParams",
+					"item": [
+						{
+							"name": "GET#api/v1.0/sightings/search?bird",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?birdId=1",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "birdId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/search?location",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?location=Delta Dunarii",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "location",
+											"value": "Delta Dunarii"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/search?bird&location",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?birdId=1&location=Delta Dunarii",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "birdId",
+											"value": "1"
+										},
+										{
+											"key": "location",
+											"value": "Delta Dunarii"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/search?bird&location&startTime&endTime",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?birdId=1&location=Delta Dunarii&startTime=2001-07-15 09:30:00&endTime=2011-07-15 09:30:00",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "birdId",
+											"value": "1"
+										},
+										{
+											"key": "location",
+											"value": "Delta Dunarii"
+										},
+										{
+											"key": "startTime",
+											"value": "2001-07-15 09:30:00"
+										},
+										{
+											"key": "endTime",
+											"value": "2011-07-15 09:30:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/search?startTime&endTime",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?startTime=2015-07-15 09:30:00&endTime=2025-07-15 09:30:00",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "startTime",
+											"value": "2015-07-15 09:30:00"
+										},
+										{
+											"key": "endTime",
+											"value": "2025-07-15 09:30:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/search?startTime",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?startTime=2015-07-15 09:30:00",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "startTime",
+											"value": "2015-07-15 09:30:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET#api/v1.0/sightings/search?endTime",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}:{{port}}/{{path}}/sightings/search?endTime=2025-07-15 09:30:00",
+									"host": [
+										"{{local}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{path}}",
+										"sightings",
+										"search"
+									],
+									"query": [
+										{
+											"key": "endTime",
+											"value": "2025-07-15 09:30:00"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "5000",
+			"type": "string"
+		},
+		{
+			"key": "path",
+			"value": "api/v1",
+			"type": "string"
+		}
+	]
+}
