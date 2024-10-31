@@ -7,6 +7,7 @@ import com.velocity.app.mapper.BirdMapper;
 import com.velocity.app.repository.BirdRepository;
 import com.velocity.app.repository.SightingRepository;
 import com.velocity.app.repository.specification.BirdSpecification;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -62,6 +63,7 @@ public class BirdService {
         return birdMapper.birdToBirdResponseDto(savedUpdatedBird);
     }
 
+    @Transactional
     public void deleteBird(Long id) {
         var sightingsForRemoval = sightingRepository.findByBirdId(id);
         sightingRepository.deleteAll(sightingsForRemoval);
