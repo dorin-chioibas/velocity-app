@@ -13,7 +13,7 @@
 					"name": "GET#api/v1/birds/",
 					"item": [
 						{
-							"name": "GET#api/v1.0/birds",
+							"name": "GET#api/v1/birds",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -32,7 +32,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/birds/1",
+							"name": "GET#api/v1/birds/1",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -57,7 +57,7 @@
 					"name": "POST#api/v1/birds",
 					"item": [
 						{
-							"name": "POST#api/v1.0/birds",
+							"name": "POST#api/v1/birds",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -85,7 +85,7 @@
 							"response": []
 						},
 						{
-							"name": "POST#api/v1.0/birds",
+							"name": "POST#api/v1/birds",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -118,7 +118,7 @@
 					"name": "PUT#api/v1/birds/{id}",
 					"item": [
 						{
-							"name": "PUT#api/v1.0/birds/1",
+							"name": "PUT#api/v1/birds/1",
 							"request": {
 								"method": "PUT",
 								"header": [],
@@ -147,7 +147,7 @@
 							"response": []
 						},
 						{
-							"name": "PUT#api/v1.0/birds/2",
+							"name": "PUT#api/v1/birds/2",
 							"request": {
 								"method": "PUT",
 								"header": [],
@@ -181,7 +181,7 @@
 					"name": "DELETE#api/v1/birds/{id}",
 					"item": [
 						{
-							"name": "DELETE#api/v1.0/birds/1",
+							"name": "DELETE#api/v1/birds/1",
 							"request": {
 								"method": "DELETE",
 								"header": [],
@@ -201,7 +201,7 @@
 							"response": []
 						},
 						{
-							"name": "DELETE#api/v1.0/birds/2",
+							"name": "DELETE#api/v1/birds/2",
 							"request": {
 								"method": "DELETE",
 								"header": [],
@@ -226,7 +226,7 @@
 					"name": "GET#api/v1/birds/search?queryParams",
 					"item": [
 						{
-							"name": "GET#api/v1.0/birds/search?name&color",
+							"name": "GET#api/v1/birds/search?name&color",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -256,7 +256,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/birds/search?name",
+							"name": "GET#api/v1/birds/search?name",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -282,7 +282,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/birds/search?color",
+							"name": "GET#api/v1/birds/search?color",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -315,10 +315,10 @@
 			"name": "Sightings",
 			"item": [
 				{
-					"name": "GET#api/v1.0/sightings",
+					"name": "GET#api/v1/sightings",
 					"item": [
 						{
-							"name": "GET#api/v1.0/sightings",
+							"name": "GET#api/v1/sightings",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -337,7 +337,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/1",
+							"name": "GET#api/v1/sightings/1",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -359,10 +359,10 @@
 					]
 				},
 				{
-					"name": "POST#api/v1.0/sightings",
+					"name": "POST#api/v1/sightings",
 					"item": [
 						{
-							"name": "POST#api/v1.0/sightings",
+							"name": "POST#api/v1/sightings",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -390,7 +390,7 @@
 							"response": []
 						},
 						{
-							"name": "POST#api/v1.0/sightings",
+							"name": "POST#api/v1/sightings",
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -421,10 +421,10 @@
 					]
 				},
 				{
-					"name": "PUT#api/v1.0/sightings/{id}",
+					"name": "PUT#api/v1/sightings/{id}",
 					"item": [
 						{
-							"name": "PUT#api/v1.0/sightings/1",
+							"name": "PUT#api/v1/sightings/1",
 							"request": {
 								"method": "PUT",
 								"header": [],
@@ -453,7 +453,7 @@
 							"response": []
 						},
 						{
-							"name": "PUT#api/v1.0/sightings/2",
+							"name": "PUT#api/v1/sightings/2",
 							"request": {
 								"method": "PUT",
 								"header": [],
@@ -484,10 +484,10 @@
 					]
 				},
 				{
-					"name": "DELETE#api/v1.0/sightings/{id}",
+					"name": "DELETE#api/v1/sightings/{id}",
 					"item": [
 						{
-							"name": "DELETE#api/v1.0/sightings/1",
+							"name": "DELETE#api/v1/sightings/1",
 							"request": {
 								"method": "DELETE",
 								"header": [],
@@ -507,7 +507,7 @@
 							"response": []
 						},
 						{
-							"name": "DELETE#api/v1.0/sightings/2",
+							"name": "DELETE#api/v1/sightings/2",
 							"request": {
 								"method": "DELETE",
 								"header": [],
@@ -529,10 +529,10 @@
 					]
 				},
 				{
-					"name": "GET#api/v1.0/sightings/search?queryParams",
+					"name": "GET#api/v1/sightings/search?queryParams",
 					"item": [
 						{
-							"name": "GET#api/v1.0/sightings/search?bird",
+							"name": "GET#api/v1/sightings/search?bird",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -558,7 +558,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/search?location",
+							"name": "GET#api/v1/sightings/search?location",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -584,7 +584,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/search?bird&location",
+							"name": "GET#api/v1/sightings/search?bird&location",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -614,7 +614,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/search?bird&location&startTime&endTime",
+							"name": "GET#api/v1/sightings/search?bird&location&startTime&endTime",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -652,7 +652,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/search?startTime&endTime",
+							"name": "GET#api/v1/sightings/search?startTime&endTime",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -682,7 +682,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/search?startTime",
+							"name": "GET#api/v1/sightings/search?startTime",
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -708,7 +708,7 @@
 							"response": []
 						},
 						{
-							"name": "GET#api/v1.0/sightings/search?endTime",
+							"name": "GET#api/v1/sightings/search?endTime",
 							"request": {
 								"method": "GET",
 								"header": [],
